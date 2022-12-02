@@ -1,5 +1,10 @@
+import Discover from "../components/Discover";
+
 export default function Home() {
   return (
-    <div></div>
-  )
+    <>
+      <Discover type="movie" />
+      <Discover type="tv" />
+    </>
+  );
 }

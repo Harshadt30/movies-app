@@ -82,8 +82,12 @@ export default function useFetch(props: Props) {
           if (!request.ok) {
             dispatch({ type: "SET_LOADING", payload: false });
             dispatch({ type: "SET_ERROR", payload: true });
-            dispatch({ type: "SET_ERRORTYPE", payload: "Unknow" });
-            dispatch({ type: "SET_ERRORMESSAGE", payload: `${request}` });
+            dispatch({ type: "SET_ERRORTYPE", payload: request.type });
+            console.log(request);
+            dispatch({
+              type: "SET_ERRORMESSAGE",
+              payload: request.statusText || "Something went wrong",
+            });
             dispatch({ type: "SET_RESPONSE", payload: {} });
           } else {
             const response = await request.json();
@@ -99,11 +103,11 @@ export default function useFetch(props: Props) {
             payload: `URL is missing or wrond provided`,
           });
         }
-      } catch (error: any) {
+      } catch ({ message }) {
         dispatch({ type: "SET_LOADING", payload: false });
         dispatch({ type: "SET_ERROR", payload: true });
         dispatch({ type: "SET_ERRORTYPE", payload: "Unknow" });
-        dispatch({ type: "SET_ERRORMESSAGE", payload: `${error.message}` });
+        dispatch({ type: "SET_ERRORMESSAGE", payload: `${message}` });
       }
     }
 
