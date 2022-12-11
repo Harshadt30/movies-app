@@ -44,7 +44,9 @@ function Header(props: Props) {
       <Container className=" border-b">
         <div className="header-wrapper flex justify-between items-center flex-wrap md:flex-nowrap py-5">
           <div className="logo-wrapper">
-            <Logo color="#fff" />
+            <Link href="/">
+              <Logo color="#fff" />
+            </Link>
           </div>
           <nav
             className="hidden md:flex flex-col md:flex-row mt-6 md:mt-0 w-full md:w-auto order-4 md:order-none justify-center"

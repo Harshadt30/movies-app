@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import Container from "../Container";
 import Header from "../Header";
 
 type Props = {
@@ -9,7 +10,7 @@ export default function Layout(props: Props) {
   return (
     <>
       <Header />
-      <main className="container">{props.children}</main>
+      <Container>{props.children}</Container>
       {/* <Footer /> */}
     </>
   );
