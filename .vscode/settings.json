@@ -6,5 +6,6 @@
   "editor.indentSize": "tabSize",
   "editor.wordWrap": "wordWrapColumn",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSaveMode": "modifications"
 }
