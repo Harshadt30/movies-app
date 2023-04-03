@@ -1,7 +1,14 @@
-import { Inter } from "next/font/google"
+import Gener from "../../components/Gener"
 
-const inter = Inter({ subsets: ["latin"] })
+type Props = {}
 
-export default function Home() {
-  return <></>
+const HomePage = (props: Props) => {
+  return (
+    <div>
+      <p>Homepage</p>
+      <Gener />
+    </div>
+  )
 }
+
+export default HomePage
