@@ -64,7 +64,6 @@ const useFetch = (props: FetcherProps) => {
         dispatch({ type: "errorMessage", payload: `${error}` })
       }
     }
-
     fetcher()
   }, [props.method, props.url])
   return state

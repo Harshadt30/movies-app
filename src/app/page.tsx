@@ -1,4 +1,4 @@
-import Gener from "../../components/Gener"
+import Gener from "@/components/Genre"
 
 type Props = {}
 

@@ -1,7 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
-import Container from "../Container"
+// import Container from "../Container"
 import styles from "./Header.styles.module.sass"
+import Container from "../Container"
 type Props = {}
 
 const linkWrapperStyles = "inline-flex gap-5"
