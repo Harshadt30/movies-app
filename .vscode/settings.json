@@ -7,5 +7,7 @@
   "editor.wordWrap": "wordWrapColumn",
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "editor.formatOnSaveMode": "modifications"
+  "editor.formatOnSaveMode": "modifications",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorWidth": 3
 }
