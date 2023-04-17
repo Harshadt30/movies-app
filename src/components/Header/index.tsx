@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import Link from "next/link"
 // import Container from "../Container"
@@ -15,12 +16,7 @@ const Header = (props: Props) => {
         <div className={`${styles.headerWrapper}`}>
           <div>
             <Link href="/" title="MovieFlixx">
-              <Image
-                src="/logo.png"
-                alt="MovieFlixx"
-                width={250}
-                height={100}
-              />
+              <img src="/logo.png" alt="MovieFlixx" width={250} height={100} />
             </Link>
           </div>
           <nav className={linkWrapperStyles}>

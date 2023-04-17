@@ -1,8 +1,8 @@
-declare namespace FetcherTypes {
-  export interface FetchResponse {
+export {}
+declare global {
+  interface FetchResponse {
     loading: boolean
     error: boolean
-    errorMessage: string
     response: object
   }
 }
