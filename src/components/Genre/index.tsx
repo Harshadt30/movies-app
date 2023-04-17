@@ -1,20 +1,15 @@
-"use client"
 import { generateMovieDBUrl } from "@/helper/index"
 import useFetch from "@/hooks/useFetch"
+import { GetServerSideProps } from "next"
 
 type GenreResponse = {
-  id: number
-  name: string
+  genre: {
+    id: number
+    name: string
+  }[]
 }
 
-const Genre = (props: {}) => {
-  const url = generateMovieDBUrl(["genre", "movie", "list"])
-  console.log(url)
-
-  const { loading, error, errorMessage, response } = useFetch({
-    url: url,
-    method: "GET",
-  })
+const Genre = (props: GenreResponse) => {
   return <div></div>
 }
 
